@@ -1,0 +1,26 @@
+{
+  "name": "linadesign-wordpress-themes",
+  "version": "1.0.0",
+  "description": "LinaDesign - Marketplace chuyên cung cấp & bán giao diện WordPress cao cấp, hiện đại, tối ưu SEO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "multer": "^2.4.0"
+  },
+  "keywords": [
+    "wordpress",
+    "themes",
+    "linadesign",
+    "express",
+    "nodejs",
+    "ecommerce"
+  ],
+  "author": "LinaDesign Team",
+  "license": "MIT"
+}

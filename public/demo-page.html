@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinaDesign WordPress Theme Live Demo Preview</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .demo-header {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .demo-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #06b6d4;
+    }
+    .demo-nav {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .demo-hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, rgba(99,102,241,0.2), transparent 70%);
+    }
+    .demo-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #06b6d4, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .demo-hero p {
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .demo-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 99px;
+      background: linear-gradient(135deg, #06b6d4, #6366f1);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(99,102,241,0.4);
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .demo-card {
+      background: #1e293b;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .demo-card i {
+      font-size: 2rem;
+      color: #06b6d4;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div class="demo-logo">
+      <i class="fa-solid fa-layer-group"></i> <span id="themeNameTitle">WordPress Live Demo</span>
+    </div>
+    <ul class="demo-nav">
+      <li>Trang chủ</li>
+      <li>Sản phẩm</li>
+      <li>Giới thiệu</li>
+      <li>Dịch vụ</li>
+      <li>Liên hệ</li>
+    </ul>
+    <div style="font-size: 0.85rem; padding: 4px 12px; background: rgba(16,185,129,0.15); color: #10b981; border-radius: 20px; font-weight: 700;">
+      ✓ Demo Ready v2026
+    </div>
+  </header>
+
+  <section class="demo-hero">
+    <h1 id="themeHeroHead">Trải Nghiệm Giao Diện Tối Ưu Tốc Độ</h1>
+    <p id="themeHeroSub">Giao diện này đang hoạt động trong chế độ Xem Trước Trực Tiếp. Tốc độ nạp trang < 0.8s, chuẩn SEO Core Web Vitals 99/100.</p>
+    <a href="#" class="demo-btn"><i class="fa-solid fa-rocket"></i> Khám Phá Ngay</a>
+  </section>
+
+  <section class="demo-grid">
+    <div class="demo-card">
+      <i class="fa-solid fa-gauge-high"></i>
+      <h3>Tối Ưu Tốc Độ 99/100</h3>
+      <p style="color:#94a3b8; font-size:0.88rem; margin-top:8px;">Core Web Vitals chuẩn mực Google PageSpeed giúp đẩy SEO top 1 nhanh chóng.</p>
+    </div>
+    <div class="demo-card">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <h3>100% Mobile Responsive</h3>
+      <p style="color:#94a3b8; font-size:0.88rem; margin-top:8px;">Hiển thị sắc nét hoàn hảo trên mọi kích thước màn hình Mobile, Tablet & Desktop.</p>
+    </div>
+    <div class="demo-card">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <h3>Kéo Thả Elementor Pro</h3>
+      <p style="color:#94a3b8; font-size:0.88rem; margin-top:8px;">Dễ dàng chỉnh sửa tùy biến toàn bộ nội dung mà không cần biết lập trình.</p>
+    </div>
+  </section>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const themeId = urlParams.get('theme');
+    if (themeId) {
+      document.getElementById('themeNameTitle').textContent = themeId.toUpperCase() + ' DEMO';
+    }
+  </script>
+</body>
+</html>
